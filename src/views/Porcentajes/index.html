@@ -10,8 +10,40 @@
 <body>
     <main>
         <section>
-
+            <div class="card mt-50 mb-50">
+                <div class="card-title mx-auto">
+                    Calculo de Porcentaje
+                </div>
+                <span>Introduzca los datos</span>
+                <br><br>
+                <form action="">
+                    <span id="card-header">Precio</span>
+                    <div class="row-1">
+                        <div class="row row-2">
+                            <span id="card-inner">Introduzca el precio orginal</span>
+                        </div>
+                        <div class="row row-2">
+                            <input type="number" id="price" placeholder="824.60" required>
+                        </div>
+                    </div>
+                    <span id="card-header">Descuento</span>
+                    <div class="row-1">
+                        <div class="row row-2">
+                            <span id="card-inner">Introduzca el descuento</span>
+                        </div>
+                        <div class="row row-2">
+                            <input type="number" id="discount" placeholder="12" required>
+                        </div>
+                    </div>
+                    <button type="button" class="btn d-flex mx-auto"><b>Calcular</b></button>
+                </form>
+                <br><br>
+                <div class="result-card inactive">
+                    <!---->
+                </div>
+            </div>
         </section>
     </main>
+    <script src="./main.js"></script>
 </body>
 </html>

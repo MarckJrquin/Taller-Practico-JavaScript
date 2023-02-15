@@ -1,0 +1,310 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Poppins', sans-serif;
+  --biggest-font-size: 1.75rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+  --tiny-font-size: .625rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semibold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 968px) {
+  :root {
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+  
+body,
+button,
+input,
+textarea {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+  
+body {
+    background: #ddd;
+    min-height: 100vh;
+    vertical-align: middle;
+    display: flex;
+    transition: .4s; /* for light mode animation */
+}
+  
+h1, h2, h3 {
+    color: var(--title-color);
+    font-weight: var(--font-semibold);
+}
+  
+ul {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+}
+  
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.inactive{
+    display: none;
+}
+
+/*=============== Main Content ===============*/
+
+section{
+    width: 100vw
+}
+
+.card{
+    margin: auto;
+    width: 600px;
+    padding: 3rem 3.5rem;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: white;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.mt-50 {
+    margin-top: 50px
+}
+
+.mb-50 {
+    margin-bottom: 50px
+}
+
+.card-title{
+    font-weight: 700;
+    font-size: 2.5em;
+}
+.nav{
+    display: flex;
+}
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    padding-inline-start: unset;
+    margin-bottom: 6vh;
+}
+.nav li{
+    padding: 1rem;
+}
+.nav li a{
+    color: black;
+    text-decoration: none;
+}
+.active{
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+input{
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    width: 100%;
+    min-width: unset;
+    background-color: transparent;
+    border-color: transparent;
+    margin: 0;
+}
+form a{
+    color:grey;
+    text-decoration: none;
+    font-size: 0.87rem;
+    font-weight: bold;
+}
+form a:hover{
+    color:grey;
+    text-decoration: none;
+}
+form .row{
+    margin: 0;
+    overflow: hidden;
+}
+form .row-1{
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 0.5rem;
+    outline: none;
+    width: 100%;
+    min-width: unset;
+    border-radius: 5px;
+    background-color: rgba(221, 228, 236, 0.301);
+    border-color: rgba(221, 228, 236, 0.459);
+    margin: 2vh 0;
+    overflow: hidden;
+}
+form .row-2{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0 0.8rem;
+}
+form .row .row-2{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0 0.8rem;
+}
+form .row .col-2,.col-7,.col-3{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 1vh;
+}
+form .row .col-2{
+    padding-right: 0;
+}
+
+#card-header{
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+#card-inner{
+    font-size: 0.7rem;
+    color: gray;
+}
+.three .col-7{
+    padding-left: 0;
+}
+.three{
+    overflow: hidden;
+    justify-content: space-between;
+}
+.three .col-2{
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 0.5rem;
+    outline: none;
+    width: 100%;
+    min-width: unset;
+    border-radius: 5px;
+    background-color: rgba(221, 228, 236, 0.301);
+    border-color: rgba(221, 228, 236, 0.459);
+    margin: 2vh 0;
+    width: fit-content;
+    overflow: hidden; 
+}
+.three .col-2 input{
+    font-size: 0.7rem;
+    margin-left: 1vh;
+}
+.btn{
+    width: 100%;
+    background-color: rgb(65, 202, 127);
+    border-color: rgb(65, 202, 127);
+    color: white;
+    justify-content: center;
+    padding: 2vh 0;
+    margin-top: 3vh;
+}
+.btn:focus{
+    box-shadow: none;
+    outline: none;
+    box-shadow: none;
+    color: white;
+    -webkit-box-shadow: none;
+    -webkit-user-select: none;
+    transition: none; 
+}
+.btn:hover{
+    color: white;
+}
+input:focus::-webkit-input-placeholder { 
+    color:transparent; 
+}
+input:focus:-moz-placeholder { 
+    color:transparent; 
+} 
+input:focus::-moz-placeholder { 
+    color:transparent; 
+} 
+input:focus:-ms-input-placeholder { 
+    color:transparent; 
+}
+
+.result-card {
+    width: 100%;
+    height: 50px;
+    background: #F5F7F9;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.result-card .result{
+    width: 200%;
+    height: 80%;
+    background: #A294E9;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin-left: 8px;
+    padding: 2px 6px;
+}
+
+@media(max-width:767px){
+    .card{
+        width: 90%;
+        padding: 1.5rem;
+    }
+}
+@media(height:1366px){
+    .card{
+        width: 90%;
+        padding: 8vh;
+    }
+}
