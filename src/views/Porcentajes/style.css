@@ -232,13 +232,6 @@ form .row .row-2{
     padding: 0 0.8rem;
 }
 
-form .row .col-2,.col-7,.col-3{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 0 1vh;
-}
-
 form .row .col-2{
     padding-right: 0;
 }
@@ -330,6 +323,72 @@ input:checked + label {
     border-top: 2px solid rgb(65, 202, 127);;
     border-bottom: 1px solid #fff;
 }
+
+/* <===== Footer =====> */
+footer {
+    background-color: #33383c;
+    padding: 30px;
+}	  
+
+footer .container{
+    padding: 35px;
+}
+  
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+  
+.col {
+    width: 100%;
+    padding: 0 40px;
+}
+  
+.logo__footer {
+    font-weight: 700;
+    font-size: 28px;
+}
+  
+.contact span, 
+.menu span {
+    color: #FFF; 
+    font-weight: 600; 
+    border-bottom: 1px solid #c7c7c7; 
+    padding: 10px 0px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+   
+.contact li a, 
+.menu li a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+  
+.contact li, 
+.menu li {
+    margin: 20px 0px;
+    list-style: none;
+}
+  
+.contact li a:hover, 
+.menu li a:hover {
+    color: #A395E9;
+    transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+}
+  
+.contact .fa-brands {
+    color: #A395E9;
+    margin-right: 10px;
+    font-size: 18px;
+}
   
 /*----------------------------------------------------------------*/
 
@@ -370,6 +429,12 @@ input:checked + label {
     .nav__links{
         display: none;
     }
+    footer .row {
+        flex-wrap: wrap
+      }
+      footer .row .col{
+        margin-bottom: 24px;
+      }
 }
 
 @media (min-width: 729px){
