@@ -89,7 +89,7 @@ button {
     text-decoration: none;
 }
 
-.navbar__left nav a:nth-child(4){
+.navbar__left nav a:nth-child(2){
     border-bottom: 2px solid rgb(19, 19, 19);
 }
 
@@ -99,8 +99,14 @@ button {
 
 .navbar__right .btn{
     background: black;
+    color: white;
     padding: 6px 15px;
-}
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
 
 /* Mobile Menu */
 .mobile-menu {
@@ -134,7 +140,7 @@ button {
     border-bottom: 2px solid black;
 }
 
-.mobile-menu .mobile-menu__links li:nth-child(4) a{
+.mobile-menu .mobile-menu__links li:nth-child(2) a{
     border-bottom: 2px solid black;
 }
 
@@ -156,121 +162,7 @@ button {
 
 
 /* ----- Main Section ----- */
-.main-section{
-    min-height: calc(100vh - 60px);
-    padding: 24px;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.main-container{
-    background: whitesmoke;
-    border: 1px solid #e6e4e9;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-    padding: 25px;
-    border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
-}
-
-.main-container .title{
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-/* ----- Inputs ----- */
-.inputs {
-    width: 100%;
-    margin: 20px auto;
-    padding: 10px;
-    border-radius: 5px;
-    background: white;
-    box-shadow: 0px 10px 40px 0px rgba(47,47,47,.1);
-}
-  
-input[type="number"]{
-    padding: 10px;
-    margin: 10px auto;
-    display: block;
-    border-radius: 5px;
-    border: 1px solid lightgrey;
-    background: none;
-    width: 100%;
-    color: black;
-}
-  
-input[type="number"]:focus {
-    outline: none;
-}
-  
-.controls {
-    display: flex;
-    gap: 15px;
-    margin: 15px auto;
-}
-
-.controls div {
-    cursor: pointer;
-    background: whitesmoke;
-    color: black;
-    padding: 8px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-
-.controls div span {
-    font-size: 0.8rem;
-    font-weight: 400;
-}
-  
-.fa-square-plus{
-    color: #007bff;
-}
-
-.fa-circle-minus{
-    color: #dc3545;
-}
-
-.results {
-    background: white;
-    margin-bottom: 15px;
-    padding: 12px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-
-.results div{
-    font-size: 0.9rem;
-    background: white;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-
-.btn {
-    padding: 8px;
-    color: white;
-    background: #41CA7F;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
 
 /*=============== Media Queries ===============*/
 @media (max-width: 730px) {

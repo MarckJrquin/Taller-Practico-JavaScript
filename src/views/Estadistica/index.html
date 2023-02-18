@@ -6,9 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header class="navbar">
+        <div class="burger__menu">
+            <button><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="navbar__left">
+            <figure class="logo">
+                <a href="https://marckjrquin.github.io/"><img src="../../img/mjlogo.png" alt="Logo"></a>
+            </figure>
+            <nav class="nav__links">
+                <a href="../../../index.html" class="item-options">Inicio</a>
+                <a href="../Formulas/index.html" class="item-options">Fórmulas Básicas</a>
+                <a href="../Porcentajes/index.html" class="item-options">Porcentajes</a>
+                <a href="#" class="item-options">Estadística</a>
+                <a href="../Salarios/index.html" class="item-options">Salarios</a>
+            </nav>
+        </div>
+        <div class="navbar__right">
+            <a class="btn " href="https://github.com/MarckJrquin/Taller-Practico-JavaScript" role="button">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </header>
+
+    <section>
+        <div class="mobile-menu inactive">
+            <ul class="mobile-menu__links">
+                <li><a href="../../../index.html">Inicio</a></li>
+                <li><a href="../Formulas/index.html">Fórmulas Básicas</a></li>
+                <li><a href="../Porcentajes/index.html">Porcentajes</a></li>
+                <li><a href="#">Estadística</a></li>
+                <li><a href="../Salarios/index.html">Salarios</a></li>
+            </ul>
+            <ul class="mobile-menu__contact">
+                <li><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/marcos-%C3%B1urinda-939685247/">LinkedIn</a></li>
+                <li><i class="fa-brands fa-github"></i><a href="https://github.com/MarckJrquin">GitHub</a></li>
+                <li><i class="fa-brands fa-square-behance"></i><a href="https://www.behance.net/marcosjarquin">Behance</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="main-section">
+        <div class="main-container">
+            <div class="title">Agrega los datos</div>
+            <div class="inputs">
+                <div id="input_fields">
+                    <input type="number" name="inputs[]" class="input_field" placeholder="96">
+                    <input type="number" name="inputs[]" class="input_field" placeholder="82">
+                </div>
+                <div class="controls">
+                    <div id="add_more_fields" class="add__btn">
+                        <i class="fa-solid fa-square-plus"></i>
+                        <span>Agregar campo</span>
+                    </div>
+                    <div id="remove_fields" class="remove__btn">
+                        <i class="fa-solid fa-circle-minus"></i>
+                        <span>Eliminar campo</span>
+                    </div>
+                </div>
+            </div>
+            <div class="results inactive">
+                <!---->
+            </div>
+            <div class="buttons">
+                <button id="btn" class="btn" type="button">Calcular</button>
+            </div>
+        </div>
+    </section>
+    <script src="../../scripts/navbar.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
