@@ -24,7 +24,7 @@
                 <a href="#" class="item-options">Fórmulas Básicas</a>
                 <a href="../Porcentajes/index.html" class="item-options">Porcentajes</a>
                 <a href="../Estadistica/index.html" class="item-options">Estadística</a>
-                <a href="../Salarios/index.html" class="item-options">Salarios</a>
+                <!-- <a href="../Salarios/index.html" class="item-options">Salarios</a> -->
             </nav>
         </div>
         <div class="navbar__right">
@@ -33,7 +33,6 @@
             </a>
         </div>
     </header>
-
     <section>
         <div class="mobile-menu inactive">
             <ul class="mobile-menu__links">
@@ -41,7 +40,7 @@
                 <li><a href="#">Fórmulas Básicas</a></li>
                 <li><a href="../Porcentajes/index.html">Porcentajes</a></li>
                 <li><a href="../Estadistica/index.html">Estadística</a></li>
-                <li><a href="../Salarios/index.html">Salarios</a></li>
+                <!-- <li><a href="../Salarios/index.html">Salarios</a></li> -->
             </ul>
             <ul class="mobile-menu__contact">
                 <li><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/marcos-%C3%B1urinda-939685247/">LinkedIn</a></li>
@@ -50,7 +49,167 @@
             </ul>
         </div>
     </section>
-    
+    <section class="cards-container__section">
+        <!-- Cards-->
+        <div class="container">
+            <div class="row">
+                <div class="card">
+                    <div class="card__container card-margin">
+                        <div class="card-body">
+                            <div class="card-body__info">
+                                <div class="card-body__info-title">
+                                    <div class="info-title__icon primary">
+                                        <span><i class="fa-solid fa-square"></i></span>
+                                    </div>
+                                    <div class="info-title__text">
+                                        <h5 class="card-title">Cuadrado</h5>
+                                        <span class="info-title__first-text">Area y Perimetro de Cuadrado</span>
+                                    </div>
+                                </div>
+                                <span class="card-input__title">Ingresa el lado del cuadrado</span>
+                                <div class="card-inputs">
+                                    <div class="card-input">
+                                        <input type="number" id="input-cuadrado" placeholder="5" required>
+                                    </div>
+                                    <div class="card-btn">
+                                        <button type="button" id="cuadrado-btn">Calcular</button>
+                                    </div>
+                                </div>
+                                <div class="result-card">
+                                    <!---->
+                                    <div class="result-card__area">
+                                        <span>Area</span>
+                                        <div class="result-card__area-result">--</div>
+                                    </div>
+                                    <div class="result-card__perimeter">
+                                        <span>Perimetro</span>
+                                        <div class="result-card__perimeter-result">--</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__container card-margin">
+                        <div class="card-body">
+                            <div class="card-body__info">
+                                <div class="card-body__info-title">
+                                    <div class="info-title__icon secondary">
+                                        <span><i class="fa-solid fa-circle"></i></span>
+                                    </div>
+                                    <div class="info-title__text">
+                                        <h5 class="card-title">Circulo</h5>
+                                        <span class="info-title__first-text">Diametro, circunferenia y area</span>
+                                    </div>
+                                </div>
+                                <span class="card-input__title">Ingresa el radio de la circunferencia</span>
+                                <div class="card-inputs">
+                                    <div class="card-input">
+                                        <input type="number" id="input-circulo" placeholder="5" required>
+                                    </div>
+                                    <div class="card-btn">
+                                        <button type="button" id="circulo-btn">Calcular</button>
+                                    </div>
+                                </div>
+                                <div class="result-card">
+                                    <!---->
+                                    <div class="result-card__area">
+                                        <span>Area</span>
+                                        <div class="circle__area-result">--</div>
+                                    </div>
+                                    <div class="result-card__circumference">
+                                        <span>circunferencia</span>
+                                        <div class="circle__circumference-result">--</div>
+                                    </div>
+                                    <div class="result-card__diameter">
+                                        <span>Diametro</span>
+                                        <div class="circle__diameter-result">--</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__container card-margin">
+                        <div class="card-body">
+                            <div class="card-body__info">
+                                <div class="card-body__info-title">
+                                    <div class="info-title__icon warning">
+                                        <span><i class="fa-solid fa-triangle"></i></span>
+                                    </div>
+                                    <div class="info-title__text">
+                                        <h5 class="card-title">Triangulo</h5>
+                                        <span class="info-title__first-text">Area y perimetro</span>
+                                    </div>
+                                </div>
+                                <span class="card-input__title">Ingresa los lados del triangulo</span>
+                                <div class="card-inputs">
+                                    <div class="card-input">
+                                        <input type="number" id="input-triangulo-l1" placeholder="5" required>
+                                        <input type="number" id="input-triangulo-l2" placeholder="5" required>
+                                        <input type="number" id="input-triangulo-l3b" placeholder="5" required>
+                                    </div>
+                                    <div class="card-btn">
+                                        <button type="button" id="triangulo-btn">Calcular</button>
+                                    </div>
+                                </div>
+                                <div class="result-card">
+                                    <!---->
+                                    <div class="result-card__area">
+                                        <span>Area</span>
+                                        <div class="triangle__area-result">--</div>
+                                    </div>
+                                    <div class="result-card__perimeter">
+                                        <span>Perimetro</span>
+                                        <div class="triangle__perimeter-result">--</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cards -->
+    </section>
+    <footer class="footer">
+        <!-- Footer-->
+        <div class="container">
+            <div class="row">
+                <div class="col col-1">
+                    <span class="logo__footer"><img src="../../img/mjlogo.png" alt=""></span>
+                </div>
+                <div class="col col-2">
+                    <ul class="menu">
+                        <span>Menu</span>    
+                        <li><a href="../../../index.html">Inicio</a></li>
+                        <li><a href="#">Fórmulas Básicas</a></li>
+                        <li><a href="../Porcentajes/index.html">Porcentajes</a></li>
+                        <li><a href="../Estadistica/index.html">Estadística</a></li>
+                        <!-- <li><a href="../Salarios/index.html">Salarios</a></li> -->
+                        <li><a href="https://marckjrquin.github.io/">Sobre mi</a></li>
+                    </ul>
+                </div>
+                <div class="col col-3">
+                    <ul class="contact">
+                        <span>Contact</span>       
+                        <li>
+                            <a href=""><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </li> 
+                        <li>
+                            <a href="#"><i class="fa-brands fa-square-behance"></i> Behance</a>
+                        </li> 
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        <!-- Footer-->
+    </footer>
     <script src="../../scripts/navbar.js"></script>
     <script src="./main.js"></script>
 </body>
